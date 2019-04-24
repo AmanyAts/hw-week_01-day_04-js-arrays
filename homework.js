@@ -79,3 +79,73 @@ const countUpAndDown=function(num){
     console.log(str+" "+strRev);
     
     }
+//7
+const wordsWithA = function(animal){
+    const newArr=[];
+    for(let i=0;i<animal.length;i++){
+    if(animal[i].indexOf('a')!= -1){
+    newArr.push(animal[i]);
+    
+    }
+    
+    }
+    return newArr;
+        }//close
+//8
+const wordsWithLetter = function(letter,animal){
+    const newArr=[];
+    for(let i=0;i<animal.length;i++){
+    if(animal[i].indexOf(letter)!= -1){
+    newArr.push(animal[i]);
+    
+    }
+    
+    }
+    return newArr;
+        }//close
+//9
+const longestWord = function(str){
+    let newStr=str.split(" ");
+    let longestStr="";
+    
+    for(let i=0;i<newStr.length;i++){
+   
+         if(newStr[i].length>longestStr.length){
+     longestStr=newStr[i];
+   // console.log("1")
+    }else{
+    longestStr=longestStr;
+    //console.log("2")
+    }
+    
+    }
+    return longestStr;
+        }//close
+//10
+const largestEvenNumber = function(arrayNum){
+    let largestNum=0;
+    let evenArr=[];
+    for(let i=0;i<arrayNum.length;i++){
+    if(arrayNum[i]%2==0){ 
+    
+    evenArr.push(arrayNum[i]);}
+    
+    
+    }//checkforeven
+    console.log(evenArr);
+    for(let i=0;i<evenArr.length;i++){
+    
+      if(evenArr[i]>largestNum){
+         largestNum=evenArr[i];
+       
+        }else{
+        largestNum=largestNum;
+       
+        }
+    
+    }//forloop for the even arr
+        
+    
+    
+    return largestNum;
+        }//close
